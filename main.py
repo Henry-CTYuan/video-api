@@ -29,7 +29,7 @@ async def process_video(
         subprocess.run(ffmpeg_cmd, check=True)
         # 获取你在 Railway 的公网域名（这需要你在 Railway 环境变量里手动加一个 DOMAIN）
         # 或者今晚先写死你现在的域名：
-        domain = "https://你的railway域名.up.railway.app" 
+        domain = "https://video-api-production-8e5a.up.railway.app"
         processed_url = f"{domain}/download/{output_filename}"
         
         return {
